@@ -11,7 +11,7 @@ namespace Space_Shooter
         static void Main(string[] args)
         {
             Game newGame = new Game();
-            newGame.MainGame();
+            newGame.MainMenu();
         }
     }
 }

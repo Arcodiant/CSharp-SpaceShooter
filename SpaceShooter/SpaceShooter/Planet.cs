@@ -19,6 +19,7 @@ namespace Space_Shooter
         public bool IsDying = false;
         public static bool HasSpawned = false;
         public bool IsInAnimation = false;
+        public bool IsSaturn = false;
 
         private int HitTick;
         public static int TickSinceDeath = 1000;
@@ -39,8 +40,18 @@ namespace Space_Shooter
         {
             Buffer = buffer;
             Manager = manager;
-            
-            Texture = File.ReadAllText("saturn.txt").Replace("\r", "").Split('\n');
+
+            if (rnd.Next(0, 2) == 0)
+            {
+                Texture = File.ReadAllText("saturn.txt").Replace("\r", "").Split('\n');
+                IsSaturn = true;
+                HP += 25; // Tankier than Neptune but bigger.
+            }
+            else
+            {
+                Texture = File.ReadAllText("neptune.txt").Replace("\r", "").Split('\n');
+                IsSaturn = false;
+            }
             Height = Texture.Count();
             Width = Texture[0].Length;
 
@@ -96,7 +107,7 @@ namespace Space_Shooter
             }
             else
             {
-                Buffer.DrawPlanet(Texture, Position);
+                Buffer.DrawPlanet(Texture, Position, IsSaturn);
                 if (currentTick >= NextAnimationFrame)
                 {
                     Position.y += 1;

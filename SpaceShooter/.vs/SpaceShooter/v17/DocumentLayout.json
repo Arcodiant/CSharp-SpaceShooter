@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|c:\\users\\julia.menshikov\\desktop\\tortoise c# projects\\csharp-spaceshooter\\spaceshooter\\spaceshooter\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|c:\\users\\julia.menshikov\\desktop\\tortoise c# projects\\csharp-spaceshooter\\spaceshooter\\spaceshooter\\menubox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\menubox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\gridtexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +19,40 @@
       "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\render.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|c:\\users\\julia.menshikov\\desktop\\tortoise c# projects\\csharp-spaceshooter\\spaceshooter\\spaceshooter\\gameobjdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\gameobjdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\gameobjdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\textures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\textures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|c:\\users\\julia.menshikov\\desktop\\tortoise c# projects\\csharp-spaceshooter\\spaceshooter\\spaceshooter\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|c:\\users\\julia.menshikov\\desktop\\tortoise c# projects\\csharp-spaceshooter\\spaceshooter\\spaceshooter\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,20 +63,12 @@
       "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\animator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\consolechar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\consolechar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|solutionrelative:spaceshooter\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9676CF04-CFBD-471C-B980-93D1124F7465}|SpaceShooter\\SpaceShooter.csproj|C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\spaceshooter\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,30 +86,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Render.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Render.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Render.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Render.cs",
-              "RelativeToolTip": "SpaceShooter\\Render.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAywCcAAABwAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Program.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Program.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Program.cs",
+              "RelativeToolTip": "SpaceShooter\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:54.757Z",
+              "WhenOpened": "2025-04-26T20:48:18.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "Textures.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Textures.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Textures.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Textures.cs",
+              "RelativeToolTip": "SpaceShooter\\Textures.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:50:55.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Comet.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Comet.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Comet.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Comet.cs",
+              "RelativeToolTip": "SpaceShooter\\Comet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:50:53.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuBox.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\MenuBox.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\MenuBox.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\MenuBox.cs",
+              "RelativeToolTip": "SpaceShooter\\MenuBox.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:04:54.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Game.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Game.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Game.cs",
+              "RelativeToolTip": "SpaceShooter\\Game.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:50:54.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GameObjDraw.cs",
               "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\GameObjDraw.cs",
               "RelativeDocumentMoniker": "SpaceShooter\\GameObjDraw.cs",
               "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\GameObjDraw.cs",
               "RelativeToolTip": "SpaceShooter\\GameObjDraw.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAmwBYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T14:03:22.778Z",
               "EditorCaption": ""
@@ -109,32 +168,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GridTexture.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\GridTexture.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\GridTexture.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\GridTexture.cs",
-              "RelativeToolTip": "SpaceShooter\\GridTexture.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAAAL8AAAA8AAAAAAAAAA==",
+              "Title": "Render.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Render.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Render.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Render.cs",
+              "RelativeToolTip": "SpaceShooter\\Render.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwB0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:54.192Z",
+              "WhenOpened": "2025-04-26T20:50:54.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Asteroid.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Asteroid.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Asteroid.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Asteroid.cs",
-              "RelativeToolTip": "SpaceShooter\\Asteroid.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CollisionManager.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\CollisionManager.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\CollisionManager.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\CollisionManager.cs",
+              "RelativeToolTip": "SpaceShooter\\CollisionManager.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAIAwwKIAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:43.943Z",
+              "WhenOpened": "2025-04-26T20:50:55.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Player.cs",
               "RelativeDocumentMoniker": "SpaceShooter\\Player.cs",
@@ -142,90 +201,37 @@
               "RelativeToolTip": "SpaceShooter\\Player.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwDkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:53.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T20:50:53.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CollisionManager.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\CollisionManager.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\CollisionManager.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\CollisionManager.cs",
-              "RelativeToolTip": "SpaceShooter\\CollisionManager.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAswGAAAABDAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GridTexture.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\GridTexture.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\GridTexture.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\GridTexture.cs",
+              "RelativeToolTip": "SpaceShooter\\GridTexture.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwHUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:55.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Game.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Game.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Game.cs",
-              "RelativeToolTip": "SpaceShooter\\Game.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAcwGUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:54.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Planet.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Planet.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Planet.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Planet.cs",
-              "RelativeToolTip": "SpaceShooter\\Planet.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvyAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T21:44:54.998Z",
+              "WhenOpened": "2025-04-26T20:50:54.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Textures.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Textures.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Textures.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Textures.cs",
-              "RelativeToolTip": "SpaceShooter\\Textures.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAcwH4AAABTAAAAAAAAAA==",
+              "Title": "Box.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Box.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Box.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Box.cs",
+              "RelativeToolTip": "SpaceShooter\\Box.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAD4vywAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:55.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnemyManager.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\EnemyManager.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\EnemyManager.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\EnemyManager.cs",
-              "RelativeToolTip": "SpaceShooter\\EnemyManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:54.42Z",
+              "WhenOpened": "2025-04-28T17:13:59.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Animator.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Animator.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Animator.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Animator.cs",
-              "RelativeToolTip": "SpaceShooter\\Animator.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T21:08:19.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Bullet.cs",
               "RelativeDocumentMoniker": "SpaceShooter\\Bullet.cs",
@@ -238,7 +244,56 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnemyManager.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\EnemyManager.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\EnemyManager.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\EnemyManager.cs",
+              "RelativeToolTip": "SpaceShooter\\EnemyManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:50:54.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Planet.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Planet.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Planet.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Planet.cs",
+              "RelativeToolTip": "SpaceShooter\\Planet.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwC8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:44:54.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Asteroid.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Asteroid.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Asteroid.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Asteroid.cs",
+              "RelativeToolTip": "SpaceShooter\\Asteroid.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T20:50:43.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Animator.cs",
+              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Animator.cs",
+              "RelativeDocumentMoniker": "SpaceShooter\\Animator.cs",
+              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Animator.cs",
+              "RelativeToolTip": "SpaceShooter\\Animator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T21:08:19.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ConsoleChar.cs",
               "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\ConsoleChar.cs",
               "RelativeDocumentMoniker": "SpaceShooter\\ConsoleChar.cs",
@@ -246,25 +301,11 @@
               "RelativeToolTip": "SpaceShooter\\ConsoleChar.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwBMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:54.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T20:50:54.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Program.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Program.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Program.cs",
-              "RelativeToolTip": "SpaceShooter\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:48:18.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Entity.cs",
               "RelativeDocumentMoniker": "SpaceShooter\\Entity.cs",
@@ -272,12 +313,11 @@
               "RelativeToolTip": "SpaceShooter\\Entity.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:53.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T20:50:53.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "SaveData.cs",
               "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\SaveData.cs",
               "RelativeDocumentMoniker": "SpaceShooter\\SaveData.cs",
@@ -286,18 +326,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T20:50:54.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Comet.cs",
-              "DocumentMoniker": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Comet.cs",
-              "RelativeDocumentMoniker": "SpaceShooter\\Comet.cs",
-              "ToolTip": "C:\\Users\\julia.menshikov\\Desktop\\Tortoise C# Projects\\CSharp-SpaceShooter\\SpaceShooter\\SpaceShooter\\Comet.cs",
-              "RelativeToolTip": "SpaceShooter\\Comet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T20:50:53.553Z"
             }
           ]
         }

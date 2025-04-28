@@ -15,24 +15,27 @@ namespace Space_Shooter
     {
         ConsoleKeyInfo? KeyInfo;
         Render Renderer;
+        Render MenuRenderer;
         Stopwatch Timer;
         CollisionManager Manager;
 
         Dictionary<string, string> Menu = new Dictionary<string, string>()
         {
-            {"New Game", "PERESTROIKA - Game made by DataCrab."},
-            {"Load Game", "Programmed in C#."},
-            {"Options", " ───────────────────────────────── "},
-            {"Quit", "Thanks for Playing!"}
+            {"Infinite Mode", "Space Shooter"},
+            {"Journey Mode", "Programmed in C#"},
+            {"Load Game", "Game made by DataCrab"},
+            {"Options", "Thanks for Playing!"}
 
         };
 
         GridBuffer GameBuffer;
+        GridBuffer MenuBuffer;
         Textures GameTextures;
-        GameObjDraw Drawer;
+        MenuBox StartMenu;
         Player User;
 
-        (int x, int y) MainGameSize = (80, 25);
+        (int x, int y) MainGameSize = (79, 25);
+        (int x, int y) MenuGameSize = (100, 40);
         private int TickRate = 10;
         private bool GameStarted = false;
 
@@ -41,8 +44,9 @@ namespace Space_Shooter
             KeyInfo = new ConsoleKeyInfo?();
 
             GameBuffer = new GridBuffer(MainGameSize.x, MainGameSize.y);
+            MenuBuffer = new GridBuffer(MenuGameSize.x, MenuGameSize.y);
+            MenuRenderer = new Render((MenuGameSize.x, MenuGameSize.y), MenuBuffer);
             Renderer = new Render((MainGameSize.x, MainGameSize.y), GameBuffer);
-            Drawer = new GameObjDraw(GameBuffer);
 
             Timer = new Stopwatch();
             GameTextures = new Textures();
@@ -53,6 +57,65 @@ namespace Space_Shooter
 
             Title = "=== Space Shooter ==="; 
             CursorVisible = false;
+
+        }
+
+        public void MainMenu()
+        {
+            SetWindowSize(MenuGameSize.x, MenuGameSize.y);
+            SetBufferSize(MenuGameSize.x, MenuGameSize.y);
+
+            StartMenu = new MenuBox(40, 9, (5, 26), "Menu");
+
+            while (true)
+            {
+
+                MenuBuffer.ResetBuffer();
+
+                MenuBuffer.DrawMenuTexture(GameTextures.ArraySpaceShooter, (4, 3), ConsoleColor.White, ConsoleColor.Black);
+                MenuBuffer.DrawPlanetGradient(GameTextures.ArrayAstronaut, (58, 1));
+                StartMenu.InitBox(false, MenuBuffer);
+                StartMenu.InitializeMenu(Menu);
+                StartMenu.RenderMenu(true, true, MenuBuffer);
+
+                MenuRenderer.RenderBuffer();
+
+                KeyInfo = ReadKey(true);
+
+                if (KeyInfo != null)
+                {
+                    if (KeyInfo.Value.Key == ConsoleKey.UpArrow || KeyInfo.Value.Key == ConsoleKey.DownArrow)
+                    {
+                        StartMenu.SelectMenu(KeyInfo);
+                        StartMenu.RenderMenu(true, true, MenuBuffer);
+                    }
+                    if (KeyInfo.Value.Key == ConsoleKey.Enter)
+                    {
+                        switch (StartMenu.GetIndex())
+                        {
+                            case 0:
+                                MenuBuffer.ResetBuffer();
+                                KeyInfo = null;
+                                Timer.Stop();
+                                MainGame();
+                                break;
+                            case 1:
+                                WriteLine("Load Game!");
+                                ReadLine();
+                                break;
+                            case 2:
+                                WriteLine("Options!");
+                                ReadLine();
+                                break;
+                            case 3:
+                                WriteLine("Quit!");
+                                ReadLine();
+                                break;
+                        }
+                    }
+                }
+
+            }
         }
 
         public void MainGame()
@@ -60,6 +123,7 @@ namespace Space_Shooter
             SetWindowSize(MainGameSize.x, MainGameSize.y);
             SetBufferSize(MainGameSize.x, MainGameSize.y);
             CursorVisible = false;
+
             int tickcount = 0;
             int frames_rendered = 0;
             int fps = 0;

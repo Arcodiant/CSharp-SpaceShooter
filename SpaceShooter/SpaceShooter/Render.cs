@@ -57,12 +57,17 @@ namespace Space_Shooter
                 }
             }
 
+            RenderBuffer();
 
+        }
+
+        public void RenderBuffer()
+        {
             SetCursorPosition(0, 0);
             ConsoleColor currentForeground = ConsoleColor.White;
             ConsoleColor currentBackground = ConsoleColor.Black;
 
-            for (int y=0; y < Height; y++)
+            for (int y = 0; y < Height; y++)
             {
                 StringBuilder row = new StringBuilder();
                 for (int x = 0; x < Width; x++)

@@ -68,8 +68,34 @@ namespace Space_Shooter
                     int bufferX = position.x + x;
                     if (bufferX < 0 || bufferX >= Width)
                         continue;
-                    Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], foreground, background);
+                    if (img[y][x] != ' ')
+                        Buffer[bufferY][bufferX] = new ConsoleChar(img[y][x], foreground, background);
                 }
+            }
+        }
+
+        public void DrawPlanetGradient(string[] img, (int x, int y) position)
+        {
+            for (int y = 0; y < img.Count(); y++)
+            {
+                int bufferY = position.y + y;
+                if (bufferY < 0 || bufferY >= Height)
+                    continue;
+                for (int x = 0; x < img[y].Length; x++)
+                {
+                    int bufferX = position.x + x;
+                    if (bufferX < 0 || bufferX >= Width)
+                        continue;
+                    if (img[y][x] != ' ')
+                        if (img[y][x] == ',' || img[y][x] == '-' || img[y][x] == ':' || img[y][x] == '^')
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y][x], ConsoleColor.DarkGray);
+                        else if (img[y][x] == ';' || img[y][x] == '/' || img[y][x] == '~' || img[y][x] == '[')
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y][x], ConsoleColor.Gray);
+                        else if (img[y][x] == 'M' || img[y][x] == 'd' || img[y][x] == 'o' || img[y][x] == '@' || img[y][x] == 'P' || img[y][x] == 'Y')
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y][x], ConsoleColor.White);
+                        else
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y][x], ConsoleColor.White);
+                }       
             }
         }
 
@@ -91,7 +117,7 @@ namespace Space_Shooter
             }
         }
 
-        public void DrawPlanet(string[] img, (int x, int y) position)
+        public void DrawPlanet(string[] img, (int x, int y) position, bool IsSaturn)
         {
             for (int y = 0; y < img.Count(); y++)
             {
@@ -103,20 +129,38 @@ namespace Space_Shooter
                     int bufferX = position.x + x;
                     if (bufferX < startX || bufferX >= overlayWidth)
                         continue;
-                    if (img[y][x] != ' ')
+                    if (IsSaturn) // for sure is a cleaner way
+                    {
+                        if (img[y][x] != ' ')
+                        {
+                            if (img[y][x] == '▒')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Yellow);
+                            else if (img[y][x] == '▓')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow);
+                            else if (img[y][x] == '░')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Yellow, ConsoleColor.DarkYellow);
+                            else if (img[y][x] == '#')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Yellow);
+                            else if (img[y][x] == '@')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Yellow, ConsoleColor.DarkYellow);
+                            else
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Black);
+                        }
+                    }
+                    else
                     {
                         if (img[y][x] == '▒')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Yellow);
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Blue);
                         else if (img[y][x] == '▓')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow);
-                        else if (img[y][x] == '░')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Yellow, ConsoleColor.DarkYellow);
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Blue);
+                        else if (img[y][x] == '░') 
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
                         else if (img[y][x] == '#')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Yellow);
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Blue, ConsoleColor.DarkBlue);
                         else if (img[y][x] == '@')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Yellow, ConsoleColor.DarkYellow);
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
                         else
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Black);
+                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Black);
                     }
                 }
             }
@@ -151,6 +195,17 @@ namespace Space_Shooter
                 if (bufferX < startX || bufferX >= overlayWidth)
                     continue;
                 Buffer[position.y][bufferX] = new ConsoleChar(img[x].Character, img[x].ForegroundColor, img[x].BackgroundColor);
+            }
+        }
+
+        public void Draw(List<ConsoleChar> img, (int x, int y) position, ConsoleColor foreground, ConsoleColor background)
+        {
+            for (int x = 0; x < img.Count(); x++)
+            {
+                int bufferX = position.x + x;
+                if (bufferX < startX || bufferX >= overlayWidth)
+                    continue;
+                Buffer[position.y][bufferX] = new ConsoleChar(img[x].Character, foreground, background);
             }
         }
 

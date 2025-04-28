@@ -13,8 +13,8 @@ namespace Craft_Batcher
         GridBuffer Buffer;
 
         private string Background;
-        private (int x, int y) Background1pos = (6, 6);
-        private (int x, int y) Background2pos = (135, 6);
+        private (int x, int y) Background1pos = (6,6);
+        private (int x, int y) Background2pos = (135,6);
         private int Background1_velocity = 1;
         private int Background2_velocity = 1;
 
@@ -63,7 +63,7 @@ namespace Craft_Batcher
                     p.DeathAnimation(current_tick);
                 else
                 {
-                    Buffer.DrawPlanet(p.Texture, p.Position);
+                    Buffer.DrawPlanet(p.Texture, p.Position, p.IsSaturn);
                     if (p.IsInAnimation)
                         p.HitAnimation(current_tick, p.RandomPos);
                 }
@@ -79,6 +79,7 @@ namespace Craft_Batcher
             {
                 Buffer.Draw(b.Texture, b.Position);
             }
+
         }
 
         public void FlickerText(string text)

@@ -15,32 +15,42 @@ namespace Space_Shooter
 
         Random rnd = new Random();
 
-        private int AsteroidSpawnRate = 60;
+        public int AsteroidSpawnRate = 60;
         public int NextSpawnAsteroid = 0;
-        private int CometSpawnRate = 120;
+        public int CometSpawnRate = 120;
         public int NextSpawnComet = 0;
-        private int PlanetSpawnRate = 1000;
+        public int PlanetSpawnRate = 1000;
         public int NextSpawnPlanet = 0;
 
-        public EnemyManager(CollisionManager manager, GridBuffer buffer)
+        private bool SpawnAsteroidBlocked;
+        private bool SpawnCometBlocked;
+        private bool SpawnPlanetBlocked;
+
+        public EnemyManager(CollisionManager manager, GridBuffer buffer, bool spawnAsteroidBlocked, bool spawnCometBlocked, bool spawnPlanetBlocked)
         {
             Manager = manager;
             Buffer = buffer;
             Texture = new Textures();
+            SpawnAsteroidBlocked = spawnAsteroidBlocked;
+            SpawnCometBlocked = spawnCometBlocked;
+            SpawnPlanetBlocked = spawnPlanetBlocked;
         }
         public void SpawnAsteroid()
         {
-            Manager.Asteroids.Add(new Asteroid(Manager, Buffer,(78, rnd.Next(6, 23)), Texture.Asteroid));
+            if (!SpawnAsteroidBlocked)
+                Manager.Asteroids.Add(new Asteroid(Manager, Buffer,(78, rnd.Next(6, 23)), Texture.Asteroid));
         }
 
         public void SpawnComet()
         {
-            Manager.Asteroids.Add(new Comet(Manager, Buffer, (78, rnd.Next(6, 23)), Texture.Comet));
+            if (!SpawnCometBlocked)
+                Manager.Asteroids.Add(new Comet(Manager, Buffer, (78, rnd.Next(6, 23)), Texture.Comet));
         }
 
         public void SpawnPlanet()
         {
-            Manager.Planets.Add(new Planet(Manager, Buffer, (78, rnd.Next(0, 15))));
+            if (!SpawnPlanetBlocked)
+                Manager.Planets.Add(new Planet(Manager, Buffer, (78, rnd.Next(0, 15))));
         }
 
         public void UpdateSpawnAsteroid(int tick)

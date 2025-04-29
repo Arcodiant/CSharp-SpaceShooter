@@ -33,11 +33,23 @@ namespace Space_Shooter
         public string[] ArrayAstronaut;
         private string SpaceShooter = File.ReadAllText("spaceshooter.txt").Replace("\r", "");
         public string[] ArraySpaceShooter;
+        private string IntroAsteroid = File.ReadAllText("asteroid.txt").Replace("\r", "");
+        public string[] ArrayAsteroid;
+        private string IntroComet = File.ReadAllText("comet.txt").Replace("\r", "");
+        public string[] ArrayComet;
+        private string IntroPlanet = File.ReadAllText("planet.txt").Replace("\r", "");
+        public string[] ArrayPlanet;
+        private string IntroBlackHole = File.ReadAllText("blackhole.txt").Replace("\r", "");
+        public string[] ArrayBlackHole;
 
         public Textures()
         {
             ArrayAstronaut = Astronaut.Split('\n');
             ArraySpaceShooter = SpaceShooter.Split('\n');
+            ArrayAsteroid = IntroAsteroid.Split('\n');
+            ArrayComet = IntroComet.Split('\n');
+            ArrayPlanet = IntroPlanet.Split('\n');
+            ArrayBlackHole = IntroBlackHole.Split('\n');
 
             Spaceship = new List<ConsoleChar>();
             Spaceship.Add(new ConsoleChar('=', ConsoleColor.Yellow, ConsoleColor.Black));

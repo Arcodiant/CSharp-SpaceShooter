@@ -18,11 +18,20 @@ namespace Space_Shooter
 
         private Planet HitPlanet;
 
-        public CollisionManager(GridBuffer buffer, Player player)
+        public CollisionManager(GridBuffer buffer, Player player, bool spawnast, bool spawncom, bool spawnpln)
         {
             Buffer = buffer;
             Player = player;
-            Enemies = new EnemyManager(this, Buffer);
+            Enemies = new EnemyManager(this, Buffer, spawnast, spawncom, spawnpln);
+            if (spawnpln && spawncom)
+            {
+                Enemies.AsteroidSpawnRate = 40;
+            }
+            else if (spawnpln && !spawncom)
+            {
+                Enemies.AsteroidSpawnRate = 50;
+                Enemies.CometSpawnRate = 110;
+            }
         }
 
         public void Update(int current_tick)
@@ -160,7 +169,8 @@ namespace Space_Shooter
                 Bullets.Remove(hitBullet);
                 asteroid.Die(current_tick);
 
-                Buffer.Buffer[hitBullet.Position.y][hitBullet.Position.x] = new ConsoleChar(' ');
+                if (hitBullet.Position.x < Buffer.Width)
+                    Buffer.Buffer[hitBullet.Position.y][hitBullet.Position.x] = new ConsoleChar(' ');
                 Buffer.Buffer[asteroid.Position.y][asteroid.Position.x] = new ConsoleChar(' ');
 
                 Player.Score += 1;

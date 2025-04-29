@@ -57,6 +57,8 @@ namespace Craft_Batcher
         {
             if (player.Win)
                 Buffer.Draw(player.Texture, player.Position);
+            else
+                player.DeathAnimation(current_tick);
             foreach (var p in planets)
             {
                 if (p.IsDying)

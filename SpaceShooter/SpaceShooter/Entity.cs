@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Craft_Batcher;
 
 namespace Space_Shooter
 {
@@ -23,6 +24,8 @@ namespace Space_Shooter
         Textures TextureManager = new Textures();
         GridBuffer Buffer;
         Animator AnimationManager;
+
+        SoundManager SoundManager = new SoundManager();
 
         public Entity(CollisionManager manager, GridBuffer buffer)
         {

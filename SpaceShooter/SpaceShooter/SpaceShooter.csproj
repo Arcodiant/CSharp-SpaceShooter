@@ -63,6 +63,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Render.cs" />
     <Compile Include="SaveData.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="TextAnimator.cs" />
+    <Compile Include="TextManager.cs" />
     <Compile Include="Textures.cs" />
   </ItemGroup>
   <ItemGroup>

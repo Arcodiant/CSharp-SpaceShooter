@@ -30,7 +30,7 @@ namespace Space_Shooter
             Drawer = new GameObjDraw(Buffer);
             
         }
-        public void RenderGame(Player player, CollisionManager manager, int current_tick, int fps, bool gamestarted) // Render whole buffer
+        public void RenderGame(Player player, CollisionManager manager, int current_tick, int fps, bool gamestarted, int? score) // Render whole buffer
         {
             Buffer.Buffer = Buffer.ResetBuffer();
 
@@ -50,6 +50,15 @@ namespace Space_Shooter
             if (!player.Win)
             {
                 Drawer.FlickerText("YOU LOST");
+                if (current_tick >= Drawer.NextFrame)
+                {
+                    Drawer.Index++;
+                    Drawer.UpdateFlicker(current_tick);
+                }
+            }
+            if (player.Score >= score && score != null)
+            {
+                Drawer.FlickerText("YOU WON! Press Enter To Continue");
                 if (current_tick >= Drawer.NextFrame)
                 {
                     Drawer.Index++;

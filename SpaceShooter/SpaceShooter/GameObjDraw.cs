@@ -65,7 +65,7 @@ namespace Craft_Batcher
                     p.DeathAnimation(current_tick);
                 else
                 {
-                    Buffer.DrawPlanet(p.Texture, p.Position, p.IsSaturn);
+                    Buffer.DrawPlanet(p.Texture, p.Position, p.IsSaturn, p.IsBlackhole);
                     if (p.IsInAnimation)
                         p.HitAnimation(current_tick, p.RandomPos);
                 }

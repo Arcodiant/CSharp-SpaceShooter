@@ -74,7 +74,7 @@ namespace Space_Shooter
             SetBufferSize(MenuGameSize.x, MenuGameSize.y);
 
             StartMenu = new MenuBox(40, 9, (5, 26), "Menu");
-            SoundManager.BackGround.Play();
+            SoundManager.BackGround.PlayLooping();
 
             while (true)
             {
@@ -107,7 +107,7 @@ namespace Space_Shooter
                                 MenuBuffer.ResetBuffer();
                                 KeyInfo = null;
                                 Timer.Stop();
-                                MainGame(false, false, false, null);
+                                MainGame(false, false, false, false, null);
                                 break;
                             case 1:
                                 //Journey Mode
@@ -131,14 +131,14 @@ namespace Space_Shooter
             }
         }
 
-        public void MainGame(bool spawnast, bool spawncom, bool spawnpln, int? score)
+        public void MainGame(bool spawnast, bool spawncom, bool spawnpln, bool spawnblack, int? score)
         {
             SetWindowSize(MainGameSize.x, MainGameSize.y);
             SetBufferSize(MainGameSize.x, MainGameSize.y);
             CursorVisible = false;
-            SoundManager.BackGroundGame.Play();
+            SoundManager.BackGroundGame.PlayLooping();
 
-            Manager = new CollisionManager(GameBuffer, User, spawnast, spawncom, spawnpln);
+            Manager = new CollisionManager(GameBuffer, User, spawnast, spawncom, spawnpln, spawnblack);
 
             int tickcount = 0;
             int frames_rendered = 0;
@@ -192,6 +192,26 @@ namespace Space_Shooter
                             User.Attack(GameTextures.Bullet, Manager);
                         }
                     }
+                    else if (KeyInfo != null && !User.Win)
+                    {
+                        if (KeyInfo.Value.Key == ConsoleKey.Enter)
+                        {
+                            KeyInfo = null; // Reset Key input stream
+                            Timer.Stop();
+                            User.Win = true;
+                            User.HP = 10;
+                            User.Score = 0;
+                            User.IsDying = false;
+                            User.Position = (2, 15);
+                            Planet.HasSpawned = false;
+
+
+                            SetWindowSize(MenuGameSize.x, MenuGameSize.y);
+                            SetBufferSize(MenuGameSize.x, MenuGameSize.y);
+                            SoundManager.BackGround.PlayLooping();
+                            return;
+                        }
+                    }
 
 
                     KeyInfo = null; // Reset Key input stream
@@ -228,14 +248,15 @@ namespace Space_Shooter
                     part_one.Update(tickcount, MenuBuffer);
 
 
-                    MenuBuffer.DrawText("Press any key to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
+                    MenuBuffer.DrawText("Press ENTER to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
                     MenuRenderer.RenderBuffer();
 
                     tickcount++;
 
                     if (KeyInfo != null)
                     {
-                        break;
+                        if (KeyInfo.Value.Key == ConsoleKey.Enter)
+                            break;
                     }
 
 
@@ -245,9 +266,9 @@ namespace Space_Shooter
             }
             Timer.Stop();
             KeyInfo = null;
-            //MainGame(false, true, true, 150);
+            MainGame(false, true, true, false, 150);
 
-            SoundManager.BackGroundGame.Play();
+            SoundManager.BackGround.PlayLooping();
 
             SetWindowSize(MenuGameSize.x, MenuGameSize.y);
             SetBufferSize(MenuGameSize.x, MenuGameSize.y);
@@ -276,14 +297,15 @@ namespace Space_Shooter
                     MenuBuffer.DrawMenuTexture(GameTextures.ArrayComet, (0, 0), ConsoleColor.Gray, ConsoleColor.Black);
                     part_two.Update(tickcount, MenuBuffer);
 
-                    MenuBuffer.DrawText("Press any key to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
+                    MenuBuffer.DrawText("Press ENTER to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
                     MenuRenderer.RenderBuffer();
 
                     tickcount++;
 
                     if (KeyInfo != null)
                     {
-                        break;
+                        if (KeyInfo.Value.Key == ConsoleKey.Enter)
+                            break;
                     }
 
 
@@ -293,9 +315,9 @@ namespace Space_Shooter
             }
             Timer.Stop();
             KeyInfo = null;
-            //MainGame(false, false, true, 350);
+            MainGame(false, false, true, false, 350);
 
-            SoundManager.BackGroundGame.Play();
+            SoundManager.BackGround.PlayLooping();
 
             SetWindowSize(MenuGameSize.x, MenuGameSize.y);
             SetBufferSize(MenuGameSize.x, MenuGameSize.y);
@@ -325,14 +347,15 @@ namespace Space_Shooter
                     part_three.Update(tickcount, MenuBuffer);
 
 
-                    MenuBuffer.DrawText("Press any key to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
+                    MenuBuffer.DrawText("Press ENTER to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
                     MenuRenderer.RenderBuffer();
 
                     tickcount++;
 
                     if (KeyInfo != null)
                     {
-                        break;
+                        if (KeyInfo.Value.Key == ConsoleKey.Enter)
+                            break;
                     }
 
 
@@ -342,9 +365,9 @@ namespace Space_Shooter
             }
             Timer.Stop();
             KeyInfo = null;
-            //MainGame(false, false, false, 700);
+            MainGame(false, false, false, false, 700);
 
-            SoundManager.BackGroundGame.Play();
+            SoundManager.BackGround.PlayLooping();
 
             SetWindowSize(MenuGameSize.x, MenuGameSize.y);
             SetBufferSize(MenuGameSize.x, MenuGameSize.y);
@@ -374,20 +397,24 @@ namespace Space_Shooter
                     part_four.Update(tickcount, MenuBuffer);
 
 
-                    MenuBuffer.DrawText("Press any key to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
+                    MenuBuffer.DrawText("Press ENTER to continue...", (5, 38), ConsoleColor.White, ConsoleColor.Black);
                     MenuRenderer.RenderBuffer();
 
                     tickcount++;
 
                     if (KeyInfo != null)
                     {
-                        break;
+                        if (KeyInfo.Value.Key == ConsoleKey.Enter)
+                            break;
                     }
 
                     KeyInfo = null; // Reset Key input stream
                     Timer.Restart();
                 }
             }
+            Timer.Stop();
+            KeyInfo = null;
+            MainGame(true, true, false, true, 3000);
         }
     }
 }

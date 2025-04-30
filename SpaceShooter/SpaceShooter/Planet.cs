@@ -21,6 +21,7 @@ namespace Space_Shooter
         public static bool HasSpawned = false;
         public bool IsInAnimation = false;
         public bool IsSaturn = false;
+        public bool IsBlackhole = false;
 
         private int HitTick;
         public static int TickSinceDeath = 1000;
@@ -39,22 +40,31 @@ namespace Space_Shooter
         public int Width;
         public int Height;
 
-        public Planet(CollisionManager manager, GridBuffer buffer, (int x, int y) position)
+        public Planet(CollisionManager manager, GridBuffer buffer, (int x, int y) position, bool blackhole)
         {
             Buffer = buffer;
             Manager = manager;
-
-            if (rnd.Next(0, 2) == 0)
+            IsBlackhole = blackhole;
+            if (blackhole)
             {
-                Texture = File.ReadAllText("saturn.txt").Replace("\r", "").Split('\n');
-                IsSaturn = true;
-                HP += 35; // Tankier than Neptune but bigger.
+                Texture = File.ReadAllText("blackholepln.txt").Replace("\r", "").Split('\n');
+                HP += 5000;
+                MoveRate += 10;
             }
             else
             {
-                Texture = File.ReadAllText("neptune.txt").Replace("\r", "").Split('\n');
-                IsSaturn = false;
-                MoveRate -= 6; // Faster
+                if (rnd.Next(0, 2) == 0)
+                {
+                    Texture = File.ReadAllText("saturn.txt").Replace("\r", "").Split('\n');
+                    IsSaturn = true;
+                    HP += 35; // Tankier than Neptune but bigger.
+                }
+                else
+                {
+                    Texture = File.ReadAllText("neptune.txt").Replace("\r", "").Split('\n');
+                    IsSaturn = false;
+                    MoveRate -= 6; // Faster
+                }
             }
             Height = Texture.Count();
             Width = Texture[0].Length;
@@ -111,7 +121,7 @@ namespace Space_Shooter
             }
             else
             {
-                Buffer.DrawPlanet(Texture, Position, IsSaturn);
+                Buffer.DrawPlanet(Texture, Position, IsSaturn, IsBlackhole);
                 if (currentTick >= NextAnimationFrame)
                 {
                     Position.y += 1;

@@ -25,6 +25,7 @@ namespace Space_Shooter
         private bool SpawnAsteroidBlocked;
         private bool SpawnCometBlocked;
         private bool SpawnPlanetBlocked;
+        public bool SpawnBlackHole;
 
         public EnemyManager(CollisionManager manager, GridBuffer buffer, bool spawnAsteroidBlocked, bool spawnCometBlocked, bool spawnPlanetBlocked)
         {
@@ -49,8 +50,10 @@ namespace Space_Shooter
 
         public void SpawnPlanet()
         {
-            if (!SpawnPlanetBlocked)
-                Manager.Planets.Add(new Planet(Manager, Buffer, (78, rnd.Next(0, 15))));
+            if (!SpawnPlanetBlocked && !SpawnBlackHole)
+                Manager.Planets.Add(new Planet(Manager, Buffer, (78, rnd.Next(0, 15)),false));
+            if (!SpawnPlanetBlocked && SpawnBlackHole)
+                Manager.Planets.Add(new Planet(Manager, Buffer, (70, 0), true));
         }
 
         public void UpdateSpawnAsteroid(int tick)

@@ -14,7 +14,7 @@ namespace Space_Shooter
             Position = position;
             Texture = texture;
             // Inherited Variables
-            MoveRate = 8;
+            MoveRate = 6;
             NextMove = 0;
             VelocityX = -1;
         }

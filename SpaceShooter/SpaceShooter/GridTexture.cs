@@ -117,7 +117,7 @@ namespace Space_Shooter
             }
         }
 
-        public void DrawPlanet(string[] img, (int x, int y) position, bool IsSaturn)
+        public void DrawPlanet(string[] img, (int x, int y) position, bool IsSaturn, bool blackhole)
         {
             for (int y = 0; y < img.Count(); y++)
             {
@@ -129,9 +129,9 @@ namespace Space_Shooter
                     int bufferX = position.x + x;
                     if (bufferX < startX || bufferX >= overlayWidth)
                         continue;
-                    if (IsSaturn) // for sure is a cleaner way
+                    if (img[y][x] != ' ')
                     {
-                        if (img[y][x] != ' ')
+                        if (IsSaturn && !blackhole) // for sure is a cleaner way
                         {
                             if (img[y][x] == '▒')
                                 Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Yellow);
@@ -146,21 +146,36 @@ namespace Space_Shooter
                             else
                                 Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkYellow, ConsoleColor.Black);
                         }
-                    }
-                    else
-                    {
-                        if (img[y][x] == '▒')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Blue);
-                        else if (img[y][x] == '▓')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Blue);
-                        else if (img[y][x] == '░') 
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
-                        else if (img[y][x] == '#')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Blue, ConsoleColor.DarkBlue);
-                        else if (img[y][x] == '@')
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
+                        else if (!IsSaturn && !blackhole)
+                        {
+                            if (img[y][x] == '▒')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Blue);
+                            else if (img[y][x] == '▓')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Blue);
+                            else if (img[y][x] == '░')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
+                            else if (img[y][x] == '#')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Blue, ConsoleColor.DarkBlue);
+                            else if (img[y][x] == '@')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
+                            else
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Black);
+                        }
                         else
-                            Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.DarkBlue, ConsoleColor.Black);
+                        {
+                            if (img[y][x] == '█')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Black, ConsoleColor.Black);
+                            else if (img[y][x] == '▓')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Black, ConsoleColor.White);
+                            else if (img[y][x] == '░')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.White, ConsoleColor.Black);
+                            else if (img[y][x] == '▒')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Blue, ConsoleColor.DarkBlue);
+                            else if (img[y][x] == '@')
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Cyan, ConsoleColor.DarkCyan);
+                            else
+                                Buffer[bufferY][bufferX] = new ConsoleChar(img[y].ToCharArray()[x], ConsoleColor.Black, ConsoleColor.Black);
+                        }
                     }
                 }
             }

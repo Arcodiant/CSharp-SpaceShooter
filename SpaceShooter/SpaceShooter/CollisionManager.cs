@@ -17,12 +17,15 @@ namespace Space_Shooter
         EnemyManager Enemies;
 
         private Planet HitPlanet;
+        private bool SpawnBlack;
 
-        public CollisionManager(GridBuffer buffer, Player player, bool spawnast, bool spawncom, bool spawnpln)
+        public CollisionManager(GridBuffer buffer, Player player, bool spawnast, bool spawncom, bool spawnpln, bool spawnblack)
         {
             Buffer = buffer;
             Player = player;
             Enemies = new EnemyManager(this, Buffer, spawnast, spawncom, spawnpln);
+            SpawnBlack = spawnblack;
+            Enemies.SpawnBlackHole = spawnblack;
             if (spawnpln && spawncom)
             {
                 Enemies.AsteroidSpawnRate = 40;
@@ -103,7 +106,7 @@ namespace Space_Shooter
                 Enemies.SpawnComet();
                 Enemies.UpdateSpawnComet(current_tick);
             }
-            if (!Planet.HasSpawned && Planet.TickSinceDeath >= 1500)
+            if ((!Planet.HasSpawned && Planet.TickSinceDeath >= 1500) || (!Planet.HasSpawned && SpawnBlack))
             {
                 Enemies.SpawnPlanet();
                 Planet.TickSinceDeath = 0;
@@ -115,7 +118,7 @@ namespace Space_Shooter
         {
             var hitAsteroid = Asteroids.FirstOrDefault(a => a.Position.x == player.Position.x + 1 && a.Position.y == player.Position.y);
             var hitPlanet = Planets.FirstOrDefault(
-            p => p.Position.x <= player.Position.x && p.Position.x + p.Width >= player.Position.x &&
+            p => p.Position.x+2 <= player.Position.x && p.Position.x + p.Width >= player.Position.x &&
             p.Position.y <= player.Position.y && p.Position.y + p.Height >= player.Position.y
             );
 

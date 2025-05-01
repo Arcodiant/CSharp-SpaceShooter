@@ -74,5 +74,14 @@ namespace Space_Shooter
             if (manager.Bullets.Count < 30)
                 manager.Bullets.Add(new Bullet((Position.x + 2, Position.y), texture, manager));
         }
+        public void SpecialAttack(List<ConsoleChar> texture, CollisionManager manager)
+        {
+            if (manager.Bullets.Count < 30)
+            {
+                manager.Bullets.Add(new Bullet((Position.x + 2, Position.y+1), texture, manager));
+                manager.Bullets.Add(new Bullet((Position.x + 2, Position.y), texture, manager));
+                manager.Bullets.Add(new Bullet((Position.x + 2, Position.y-1), texture, manager));
+            }
+        }
     }
 }

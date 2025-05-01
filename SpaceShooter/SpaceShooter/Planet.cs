@@ -48,7 +48,7 @@ namespace Space_Shooter
             if (blackhole)
             {
                 Texture = File.ReadAllText("blackholepln.txt").Replace("\r", "").Split('\n');
-                HP += 5000;
+                HP += 1500;
                 MoveRate += 10;
             }
             else

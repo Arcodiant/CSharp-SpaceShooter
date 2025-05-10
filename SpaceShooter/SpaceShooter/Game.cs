@@ -68,8 +68,8 @@ namespace Space_Shooter
 
         public void MainMenu()
         {
-            SetWindowSize(105, 40);
-            SetBufferSize(105, 40);
+            SetWindowSize(105, 41);
+            SetBufferSize(105, 41);
 
             StartMenu = new MenuBox(40, 9, (5, 26), "Menu");
             SoundManager.BackGround.PlayLooping();

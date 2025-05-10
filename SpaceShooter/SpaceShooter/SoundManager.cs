@@ -5,7 +5,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Craft_Batcher
+namespace Space_Shooter
 {
     class SoundManager
     {
@@ -13,8 +13,8 @@ namespace Craft_Batcher
         public SoundPlayer Text = new SoundPlayer("Text.wav");
         public SoundPlayer HitorExplosion = new SoundPlayer("Explosion.wav");
         public SoundPlayer Shooting = new SoundPlayer();
-        public SoundPlayer BackGround = new SoundPlayer("Background music.wav");
-        public SoundPlayer BackGroundGame = new SoundPlayer("gamemusic.wav");
+        public SoundPlayer BackGround = new SoundPlayer("Music\\Background music.wav");
+        public SoundPlayer BackGroundGame = new SoundPlayer("Music\\gamemusic.wav");
 
         public SoundManager()
         {

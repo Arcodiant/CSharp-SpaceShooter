@@ -8,7 +8,6 @@ using System.IO;
 using System.Data;
 using Microsoft.Win32;
 using System.Runtime.CompilerServices;
-using Craft_Batcher;
 using System.Runtime.InteropServices;
 
 namespace Space_Shooter
@@ -37,7 +36,7 @@ namespace Space_Shooter
             Drawer.DrawBackground();
             Drawer.DrawEntities(player, manager.Asteroids, manager.Bullets, manager.Planets, current_tick);
             Drawer.DrawOverlay(player.Score, player.HP);
-            Buffer.DrawText("Fps: " + fps + "| 60-70 is Normal, that's the Tickrate", (0, 0), ConsoleColor.Black, ConsoleColor.DarkGray);
+            //Buffer.DrawText("Fps: " + fps + "| 60-70 is Normal, that's the Tickrate", (0, 0), ConsoleColor.Black, ConsoleColor.DarkGray);
             if (!gamestarted )
             {
                 Drawer.FlickerText("PRESS SPACE TO START THE GAME");

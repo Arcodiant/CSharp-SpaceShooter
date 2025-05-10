@@ -8,7 +8,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using Craft_Batcher;
 using static System.Console;
 using System.Runtime.InteropServices;
 
@@ -40,8 +39,8 @@ namespace Space_Shooter
         MenuBox StartMenu;
         Player User;
 
-        (int x, int y) MainGameSize = (79, 25);
-        (int x, int y) MenuGameSize = (100, 40);
+        (int x, int y) MainGameSize = (83, 25);
+        (int x, int y) MenuGameSize = (101, 41);
         private int TickRate = 10;
         private bool GameStarted = false;
 
@@ -69,8 +68,8 @@ namespace Space_Shooter
 
         public void MainMenu()
         {
-            SetWindowSize(MenuGameSize.x, MenuGameSize.y);
-            SetBufferSize(MenuGameSize.x, MenuGameSize.y);
+            SetWindowSize(105, 40);
+            SetBufferSize(105, 40);
 
             StartMenu = new MenuBox(40, 9, (5, 26), "Menu");
             SoundManager.BackGround.PlayLooping();
@@ -145,8 +144,8 @@ namespace Space_Shooter
 
         public void MainGame(bool spawnast, bool spawncom, bool spawnpln, bool spawnblack, int? score, bool turboactive)
         {
-            SetWindowSize(MainGameSize.x, MainGameSize.y);
-            SetBufferSize(MainGameSize.x, MainGameSize.y);
+            SetWindowSize(84, 25);
+            SetBufferSize(84, 25);
             CursorVisible = false;
             SoundManager.BackGroundGame.PlayLooping();
 

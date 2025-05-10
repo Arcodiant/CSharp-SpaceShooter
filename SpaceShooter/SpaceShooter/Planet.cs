@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using Craft_Batcher;
 
 namespace Space_Shooter
 {
@@ -47,7 +46,7 @@ namespace Space_Shooter
             IsBlackhole = blackhole;
             if (blackhole)
             {
-                Texture = File.ReadAllText("blackholepln.txt").Replace("\r", "").Split('\n');
+                Texture = File.ReadAllText("Sprites\\blackholepln.txt").Replace("\r", "").Split('\n');
                 HP += 1500;
                 MoveRate += 10;
             }
@@ -55,13 +54,13 @@ namespace Space_Shooter
             {
                 if (rnd.Next(0, 2) == 0)
                 {
-                    Texture = File.ReadAllText("saturn.txt").Replace("\r", "").Split('\n');
+                    Texture = File.ReadAllText("Sprites\\saturn.txt").Replace("\r", "").Split('\n');
                     IsSaturn = true;
                     HP += 35; // Tankier than Neptune but bigger.
                 }
                 else
                 {
-                    Texture = File.ReadAllText("neptune.txt").Replace("\r", "").Split('\n');
+                    Texture = File.ReadAllText("Sprites\\neptune.txt").Replace("\r", "").Split('\n');
                     IsSaturn = false;
                     MoveRate -= 6; // Faster
                 }

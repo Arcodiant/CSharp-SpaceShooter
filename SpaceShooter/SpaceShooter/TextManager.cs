@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Space_Shooter;
 
-namespace Craft_Batcher
+namespace Space_Shooter
 {
     class TextManager
     {

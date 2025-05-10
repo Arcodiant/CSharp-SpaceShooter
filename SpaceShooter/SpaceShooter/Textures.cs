@@ -29,17 +29,17 @@ namespace Space_Shooter
 
         public List<List<char[]>> ExplosionFrames;
 
-        private string Astronaut = File.ReadAllText("astronaut.txt").Replace("\r", "");
+        private string Astronaut = File.ReadAllText("Sprites\\astronaut.txt").Replace("\r", "");
         public string[] ArrayAstronaut;
-        private string SpaceShooter = File.ReadAllText("spaceshooter.txt").Replace("\r", "");
+        private string SpaceShooter = File.ReadAllText("Sprites\\spaceshooter.txt").Replace("\r", "");
         public string[] ArraySpaceShooter;
-        private string IntroAsteroid = File.ReadAllText("asteroid.txt").Replace("\r", "");
+        private string IntroAsteroid = File.ReadAllText("Sprites\\asteroid.txt").Replace("\r", "");
         public string[] ArrayAsteroid;
-        private string IntroComet = File.ReadAllText("comet.txt").Replace("\r", "");
+        private string IntroComet = File.ReadAllText("Sprites\\comet.txt").Replace("\r", "");
         public string[] ArrayComet;
-        private string IntroPlanet = File.ReadAllText("planet.txt").Replace("\r", "");
+        private string IntroPlanet = File.ReadAllText("Sprites\\planet.txt").Replace("\r", "");
         public string[] ArrayPlanet;
-        private string IntroBlackHole = File.ReadAllText("blackhole.txt").Replace("\r", "");
+        private string IntroBlackHole = File.ReadAllText("Sprites\\blackhole.txt").Replace("\r", "");
         public string[] ArrayBlackHole;
 
         public Textures()

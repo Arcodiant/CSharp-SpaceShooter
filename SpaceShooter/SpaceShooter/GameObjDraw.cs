@@ -6,7 +6,7 @@ using System.Threading;
 using Space_Shooter;
 using System.IO;
 
-namespace Craft_Batcher
+namespace Space_Shooter
 {
     class GameObjDraw
     {
@@ -28,7 +28,7 @@ namespace Craft_Batcher
         { 
             Buffer = buffer;
 
-            Background = File.ReadAllText("Stars.txt").Replace("\r", "");
+            Background = File.ReadAllText("Sprites\\Stars.txt").Replace("\r", "");
             ArrayBackground = Background.Split('\n');
         }
 
